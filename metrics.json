@@ -1,0 +1,34 @@
+{
+  "accuracy": 0.39473684210526316,
+  "loss": 1.9811712503433228,
+  "macro": {
+    "precision": 0.2973057644110275,
+    "recall": 0.20257936507936508,
+    "f1": 0.22443181818181818
+  },
+  "weighted": {
+    "precision": 0.43266059886558494,
+    "recall": 0.39473684210526316,
+    "f1": 0.3917464114832536
+  },
+  "n_train": 177,
+  "n_val": 38,
+  "img_size": [
+    160,
+    160
+  ],
+  "batch_size": 32,
+  "epochs_fase1": 5,
+  "epochs_fase2": 5,
+  "class_names": [
+    "Fish",
+    "Coral",
+    "Shark",
+    "Octopuses",
+    "Crustaceans",
+    "Seaweed",
+    "Sponges",
+    "Other marine organisms"
+  ],
+  "n_test": 38
+}
