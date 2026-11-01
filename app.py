@@ -21,11 +21,22 @@ st.set_page_config(
     layout="wide"
 )
 
-OUT_DIR = "output_oceaniclife"
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+OUT_DIR = os.path.join(BASE_DIR, "output_oceaniclife")
 
 MODEL_PATH = os.path.join(
-    OUT_DIR, "final_marine_cnn_model.keras"
+    OUT_DIR,
+    "final_marine_cnn_model.keras"
 )
+st.write("Lokasi aplikasi:", BASE_DIR)
+st.write("Lokasi folder output:", OUT_DIR)
+st.write("Lokasi model:", MODEL_PATH)
+st.write("Model ditemukan:", os.path.exists(MODEL_PATH))
+print("Lokasi model:", os.path.abspath(MODEL_PATH))
+print("File model ditemukan:", os.path.exists(MODEL_PATH))
 
 METRICS_PATH = os.path.join(OUT_DIR, "metrics.json")
 HISTORY_PATH = os.path.join(OUT_DIR, "history.json")
